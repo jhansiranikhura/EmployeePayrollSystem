@@ -81,8 +81,6 @@ class PayrollSystem {
         }
     }
 
-    // Commit 5: Added note about hourly rate logic
-
 
     public void displayEmployees() {
         for (Employee employee : employeeList) {
