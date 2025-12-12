@@ -88,6 +88,10 @@ class PayrollSystem {
     }
 }
 
+// Commit 2: Added header comment
+
+
+
 public class Main {
     public static void main(String[] args) {
         PayrollSystem payrollSystem = new PayrollSystem();
