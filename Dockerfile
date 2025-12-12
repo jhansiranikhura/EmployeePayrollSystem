@@ -1,13 +1,11 @@
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17
 
 WORKDIR /app
 
-# Copy everything into the container
 COPY . /app
 
-# Compile all Java files inside src/
+# Compile all Java files inside src and subfolders
 RUN javac src/*.java src/Employee/*.java
 
-# Run the Main class (from src/)
+# Run Main class (classpath = src)
 CMD ["java", "-cp", "src", "Main"]
-
