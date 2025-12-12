@@ -81,8 +81,7 @@ class PayrollSystem {
         }
     }
 
-    // Commit 3: Documented Employee class purpose
-
+    // Commit 4: Minor formatting improvement
 
 
     public void displayEmployees() {
