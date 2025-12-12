@@ -81,15 +81,16 @@ class PayrollSystem {
         }
     }
 
+    // Commit 3: Documented Employee class purpose
+
+
+
     public void displayEmployees() {
         for (Employee employee : employeeList) {
             System.out.println(employee);
         }
     }
 }
-
-// Commit 2: Added header comment
-
 
 
 public class Main {
