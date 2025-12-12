@@ -4,8 +4,8 @@ WORKDIR /app
 
 COPY . /app
 
-# Compile all Java files inside src and subfolders
-RUN javac src/*.java src/Employee/*.java
+# Compile all Java files anywhere in the project
+RUN find . -name "*.java" -print0 | xargs -0 javac
 
-# Run Main class (classpath = src)
-CMD ["java", "-cp", "src", "Main"]
+# Run the Main class
+CMD ["java", "Main"]
