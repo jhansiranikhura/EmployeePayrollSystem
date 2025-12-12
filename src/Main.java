@@ -81,7 +81,7 @@ class PayrollSystem {
         }
     }
 
-    // Commit 4: Minor formatting improvement
+    // Commit 5: Added note about hourly rate logic
 
 
     public void displayEmployees() {
